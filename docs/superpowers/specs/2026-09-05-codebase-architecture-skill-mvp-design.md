@@ -381,7 +381,8 @@ The public GitHub repository uses:
 - One feature branch per change.
 - Required pull requests and resolved review conversations.
 - One required approval.
-- Automatic GitHub Copilot review on each push.
+- Automatic GitHub Copilot review when a non-draft pull request opens; reviews do not rerun automatically after every push.
+- At most one manual Copilot re-review by default after addressing the initial feedback batch.
 - Balanced Copilot review effort.
 - Copilot approvals allowed to satisfy the merge requirement.
 - Rebase of the feature branch onto current `main` before final review.
@@ -389,6 +390,8 @@ The public GitHub repository uses:
 - Automatic deletion of merged feature branches.
 
 Once CI workflows exist, branch protection will require the validation workflow and a branch-freshness check before merging.
+
+`DEVELOPMENT.md` is the source of truth for the day-to-day contribution and review workflow; this section records its design-level constraints.
 
 ## MVP acceptance criteria
 
