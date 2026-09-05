@@ -170,7 +170,7 @@ The agent reads `facts.json` and selected source evidence to infer:
 - Cohesive components and their responsibilities for C3.
 - Selected code symbols and relationships for C4.
 - Conceptual data objects not represented by one concrete source type.
-- flow names, abstraction levels, and transformation steps.
+- Flow names, abstraction levels, and transformation steps.
 
 The agent must distinguish discovered facts from inference. Every inferred element and relationship carries confidence and evidence metadata. Low-confidence architectural decisions are included only when useful and are listed in the generation report.
 
